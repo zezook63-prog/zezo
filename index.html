@@ -116,7 +116,7 @@ footer .en,.discord-link{color:#fb923c}
 <div class="made-bottom">من صنع <span class="en">Mohamed Zzezo</span></div>
 <script>
 try{var v=parseInt(localStorage.getItem('darbnar_visits')||'2048');v++;localStorage.setItem('darbnar_visits',v);document.getElementById('visits').textContent=v.toLocaleString('en');}catch(e){document.getElementById('visits').textContent='2048';}
-document.getElementById('copyDiscord').onclick=function(){var link='https://discord.gg/98bmyR7Bt';if(navigator.clipboard){navigator.clipboard.writeText(link).then(function(){alert('اتنسخ: '+link)});}else{prompt('انسخ:',link);}};
+document.getElementById('copyDiscord').onclick=function(){var link='https://discord.gg/VGSNgYNt56';if(navigator.clipboard){navigator.clipboard.writeText(link).then(function(){alert('اتنسخ: '+link)});}else{prompt('انسخ:',link);}};
 var c=document.getElementById('storm'),ctx=c.getContext('2d');
 function rs(){c.width=innerWidth;c.height=innerHeight;}rs();addEventListener('resize',rs);
 function strike(){ctx.clearRect(0,0,c.width,c.height);var x=Math.random()*c.width;ctx.strokeStyle='#facc15';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x+20,c.height*0.3);ctx.lineTo(x-10,c.height*0.6);ctx.stroke();var f=document.getElementById('flash');f.style.opacity='0.1';setTimeout(function(){f.style.opacity='0';ctx.clearRect(0,0,c.width,c.height);},200);setTimeout(strike,3000+Math.random()*4000);}
