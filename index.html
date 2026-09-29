@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DARB NAR | Official Download</title>
+<meta name="description" content="DARB NAR - حمل البرنامج الرسمي بسرعة البرق. جميع الحقوق محفوظة لـ Mohamed Zzezo" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M58 5 L18 58 H42 L38 95 L82 40 H57 Z' fill='%23f97316' stroke='%23fff' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Arial,sans-serif}
+body{background:#050304;color:#fff;min-height:100vh;overflow-x:hidden}
+.en{font-family:'Segoe UI',Arial,sans-serif;font-weight:900;letter-spacing:2px;direction:ltr;display:inline-block}
+#storm{position:fixed;inset:0;z-index:0;pointer-events:none}
+.flash{position:fixed;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:1}
+.top{display:flex;align-items:center;gap:18px;padding:14px 22px;position:sticky;top:0;z-index:20;background:rgba(5,3,4,.9);border-bottom:1px solid #f9731644}
+.brand{display:flex;align-items:center;gap:10px;font-size:22px}
+.brand svg{width:38px;height:38px;filter:drop-shadow(0 0 12px #f97316)}
+.brand .en{color:#fb923c;font-size:22px}
+nav{flex:1;display:flex;gap:6px;justify-content:center}
+nav a{color:#fed7aa;text-decoration:none;font-weight:700;padding:8px 16px;border-radius:10px}
+nav a:hover{background:#f9731626;color:#fff}
+.ver{background:#f9731622;border:1px solid #f9731655;color:#fdba74;padding:6px 14px;border-radius:20px;font-size:13px}
+.made-side{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:30;background:linear-gradient(180deg,#1a0d00,#000);border:1px solid #f9731688;border-radius:18px;padding:16px 12px;text-align:center;width:96px}
+.made-bolt{font-size:32px}
+.made-text{font-size:13px;color:#fed7aa;line-height:1.7;margin-top:6px}
+.made-text .en{color:#fb923c;font-size:13px}
+main{max-width:900px;margin:0 auto;padding:24px 18px 60px;position:relative;z-index:2}
+.hero-inner{text-align:center;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(249,115,22,.08));border:1px solid #f9731644;border-radius:28px;padding:50px 24px;position:relative}
+.hero-bolt{width:110px;height:110px;filter:drop-shadow(0 0 30px #facc15)}
+.site-name{font-size:68px;background:linear-gradient(180deg,#fef08a,#f97316 55%,#ef4444);-webkit-background-clip:text;background-clip:text;color:transparent;margin:10px 0}
+.tagline{color:#fed7aa;font-size:19px;margin-bottom:16px}
+.badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}
+.badges span{background:#00000066;border:1px solid #f9731644;padding:8px 16px;border-radius:20px;font-size:14px;color:#fdba74}
+.dl-main{display:inline-block;padding:18px 50px;border-radius:16px;font-weight:900;font-size:22px;color:#fff;text-decoration:none;background:linear-gradient(135deg,#facc15,#f97316,#ef4444)}
+.hero-discord{margin-top:14px}
+.discord-main{display:inline-block;padding:12px 30px;border-radius:12px;background:#5865F2;color:#fff;font-weight:800;font-size:17px;text-decoration:none}
+.under-dl{color:#a8a29e;font-size:14px;margin-top:12px}
+.stats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.stat{background:#00000066;border:1px solid #f9731633;border-radius:16px;padding:12px 28px;min-width:130px}
+.stat b{font-size:24px;display:block}
+.stat span{color:#fdba74;font-size:13px}
+.section{margin-top:48px}
+.section h2{font-size:30px;margin-bottom:18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:#ffffff0a;border:1px solid #f9731630;border-radius:18px;padding:24px;text-align:center}
+.card .ico{font-size:44px;margin-bottom:10px}
+.card h3{margin-bottom:8px;color:#fdba74}
+.card p{color:#d6d3d1;font-size:15px;line-height:1.8}
+.dl-box{display:flex;align-items:center;gap:18px;background:linear-gradient(135deg,#16a34a15,#f9731615);border:2px solid #22c55e55;border-radius:22px;padding:24px;flex-wrap:wrap}
+.dl-info{flex:1;min-width:220px}
+.dl-info b{font-size:26px;display:block;direction:ltr;text-align:right}
+.dl-info span{display:block;color:#fdba74;font-size:14px;margin-top:4px}
+.dl-btn{display:inline-block;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;padding:16px 44px;border-radius:14px;font-weight:900;font-size:20px;text-decoration:none}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:16px}
+.step{background:#ffffff08;border:1px solid #ffffff15;border-radius:14px;padding:14px;font-size:15px}
+.discord-card{display:flex;align-items:center;gap:18px;background:linear-gradient(135deg,#5865F233,#5865F211);border:1px solid #5865F266;border-radius:22px;padding:24px;flex-wrap:wrap}
+.discord-logo{width:64px;height:64px;border-radius:18px;background:#5865F2;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:900}
+.discord-info{flex:1;min-width:220px}
+.discord-info .invite-link{color:#c7d2fe;direction:ltr;display:block;margin:4px 0}
+.discord-join{display:inline-block;background:#5865F2;color:#fff;padding:14px 32px;border-radius:12px;font-weight:900;font-size:17px;text-decoration:none}
+.copy-btn{background:#ffffff15;border:1px solid #ffffff30;color:#fff;padding:14px 22px;border-radius:12px;font-weight:700;cursor:pointer;font-size:15px}
+.owner-card{display:flex;align-items:center;gap:16px;background:#ffffff0a;border:1px solid #f9731644;border-radius:20px;padding:22px}
+.avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#facc15,#ef4444);display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;color:#000}
+footer{text-align:center;padding:32px 20px 80px;color:#78716c}
+footer .en,.discord-link{color:#fb923c}
+.made-bottom{position:fixed;bottom:14px;left:14px;background:#000000dd;border:1px solid #f9731688;border-radius:12px;padding:9px 16px;font-size:14px;color:#fed7aa}
+@media(max-width:700px){.site-name{font-size:42px}nav{display:none}.made-side{width:72px;right:8px}}
+</style>
+</head>
+<body>
+<canvas id="storm"></canvas>
+<div class="flash" id="flash"></div>
+<header class="top">
+  <div class="brand">
+    <svg viewBox="0 0 100 100"><path d="M58 5 L18 58 H42 L38 95 L82 40 H57 Z" fill="#f97316" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg>
+    <span class="en">DARB NAR</span>
+  </div>
+  <nav><a href="#home">الرئيسية</a><a href="#features">المميزات</a><a href="#download">التحميل</a><a href="#discord">الديسكورد</a></nav>
+  <div class="ver en">v1.0</div>
+</header>
+<aside class="made-side"><div class="made-bolt">⚡</div><div class="made-text">صُنع<br>بواسطة<br><b class="en">Mohamed<br>Zzezo</b></div></aside>
+<main>
+  <section id="home" class="hero"><div class="hero-inner">
+    <svg class="hero-bolt" viewBox="0 0 100 100"><path d="M58 5 L18 58 H42 L38 95 L82 40 H57 Z" fill="#f97316" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg>
+    <h1 class="en site-name">DARB NAR</h1>
+    <p class="tagline">ضرب نار بجد ⚡ حمّل البرنامج الرسمي من الموقع مباشرة</p>
+    <div class="badges"><span>⚡ سرعة البرق</span><span>🛡️ آمن 100%</span><span>💯 مجاني</span></div>
+    <a href="https://www.mediafire.com/" target="_blank" rel="noopener" class="dl-main" id="topDl">⬇ حمّل الآن — 29.4 MB</a>
+    <div class="hero-discord"><a href="https://discord.gg/98bmyR7Bt" target="_blank" rel="noopener" class="discord-main">انضم لسيرفر الديسكورد</a></div>
+    <p class="under-dl">تحميل مباشر • <span id="dlCount">512</span> تحميلة</p>
+    <div class="stats"><div class="stat"><b id="visits">2048</b><span>زائر</span></div><div class="stat"><b class="en">29.4 MB</b><span>حجم البرنامج</span></div></div>
+  </div></section>
+  <section id="features" class="section"><h2>⚡ ليه <span class="en">DARB NAR</span> ؟</h2>
+    <div class="cards">
+      <div class="card"><div class="ico">⚡</div><h3>سرعة البرق</h3><p>تحميل مباشر بدون انتظار ولا إعلانات.</p></div>
+      <div class="card"><div class="ico">🖥️</div><h3>يشتغل على طول</h3><p>حمل ملف DarbNar.exe وشغله فورا.</p></div>
+      <div class="card"><div class="ico">🛡️</div><h3>نسخة أصلية</h3><p>الملف الأصلي من صاحب الموقع.</p></div>
+    </div>
+  </section>
+  <section id="download" class="section"><h2>⬇ خانة التحميل</h2>
+    <div class="dl-box"><div class="dl-info"><b class="en">DarbNar.exe</b><span>الإصدار 1.0 • 29.4 MB • ويندوز</span></div>
+    <div><a href="https://www.mediafire.com/" target="_blank" rel="noopener" class="dl-btn" id="mainDl">تحميل ⚡</a></div></div>
+  </section>
+  <section id="discord" class="section"><h2>سيرفر الديسكورد</h2>
+    <div class="discord-card"><div class="discord-logo">D</div>
+    <div class="discord-info"><b class="en">DARB NAR Community</b><span class="en invite-link">discord.gg/98bmyR7Bt</span></div>
+    <div><a href="https://discord.gg/98bmyR7Bt" target="_blank" rel="noopener" class="discord-join">انضم الآن</a>
+    <button id="copyDiscord" class="copy-btn" type="button">نسخ الرابط</button></div></div>
+  </section>
+  <section class="section"><h2>صاحب الموقع</h2>
+    <div class="owner-card"><div class="avatar">M</div><div><b class="en">Mohamed Zzezo</b><p>مطور ومؤسس موقع <span class="en">DARB NAR</span></p></div></div>
+  </section>
+</main>
+<footer><p>© 2026 <span class="en">DARB NAR</span> — جميع الحقوق محفوظة لـ <span class="en">Mohamed Zzezo</span></p>
+<p>الديسكورد : <a class="discord-link" href="https://discord.gg/98bmyR7Bt" target="_blank">discord.gg/98bmyR7Bt</a></p></footer>
+<div class="made-bottom">من صنع <span class="en">Mohamed Zzezo</span></div>
+<script>
+try{var v=parseInt(localStorage.getItem('darbnar_visits')||'2048');v++;localStorage.setItem('darbnar_visits',v);document.getElementById('visits').textContent=v.toLocaleString('en');}catch(e){document.getElementById('visits').textContent='2048';}
+document.getElementById('copyDiscord').onclick=function(){var link='https://discord.gg/98bmyR7Bt';if(navigator.clipboard){navigator.clipboard.writeText(link).then(function(){alert('اتنسخ: '+link)});}else{prompt('انسخ:',link);}};
+var c=document.getElementById('storm'),ctx=c.getContext('2d');
+function rs(){c.width=innerWidth;c.height=innerHeight;}rs();addEventListener('resize',rs);
+function strike(){ctx.clearRect(0,0,c.width,c.height);var x=Math.random()*c.width;ctx.strokeStyle='#facc15';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x+20,c.height*0.3);ctx.lineTo(x-10,c.height*0.6);ctx.stroke();var f=document.getElementById('flash');f.style.opacity='0.1';setTimeout(function(){f.style.opacity='0';ctx.clearRect(0,0,c.width,c.height);},200);setTimeout(strike,3000+Math.random()*4000);}
+setTimeout(strike,1500);
+</script>
+</body>
+</html>
